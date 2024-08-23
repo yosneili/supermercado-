@@ -3,8 +3,16 @@ body {
     background-origin: padding-box;
 }
 
+
+
+#logo{
+    transform: scale(2.0) ;
+}
+#img {
+    transform: scale(2.0); /* Agranda la imagen un 50% */
+  }
 .navbar {
-    background-color: #0c7c2e;
+    background-color: #F5F5DC;
 }
 
 .form-control {

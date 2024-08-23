@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Web Sencilla</title>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -41,10 +40,10 @@
             <button type="submit" id="reg-ok" class="btn">Registrar</button>
         </form>
     </section>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="img/LOGO.png" alt="Logo" style="height: 100px;">
+                <img id = logo src="img/vivaMarket.png" alt="Logo" style="height: 80px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,9 +55,9 @@
                             Todas las categorías
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                            <li><a class="dropdown-item" href="#">Categoría 1</a></li>
-                            <li><a class="dropdown-item" href="#">Categoría 2</a></li>
-                            <li><a class="dropdown-item" href="#">Categoría 3</a></li>
+                            <li><a class="dropdown-item" href="#" id="lacteosCateg">Lacteos</a></li>
+                            <li><a class="dropdown-item" href="#" id="frutasCateg">Frutas y Verduras </a></li>
+                            <li><a class="dropdown-item" href="#" id="botilleriaCateg">Botilleria</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -66,15 +65,14 @@
                             Ofertas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="offersDropdown">
-                            <li><a class="dropdown-item" href="#">Oferta 1</a></li>
-                            <li><a class="dropdown-item" href="#">Oferta 2</a></li>
-                            <li><a class="dropdown-item" href="#">Oferta 3</a></li>
+                            <li><a class="dropdown-item" href="#">Puntos VivaMarket</a></li>
+                            <li><a class="dropdown-item" href="#">Tarjeta VivaMarket</a></li>
                         </ul>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-                    <button class="btn btn-success" type="submit">Buscar</button>
+                    <input class="form-control me-2" id="inputBuscar" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+                    <button class="btn btn-success" id="btnBuscar" type="submit">Buscar</button>
                 </form>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
@@ -88,7 +86,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <img src="img/carrito.jpg" alt="Carrito" style="height: 24px;">
+                            <img id = img src="img/carrito.png" alt="Carrito" style="height: 54px;">
                         </a>
                     </li>
                 </ul>
@@ -98,7 +96,7 @@
 
 
     <section id="producto" class="container">
-        <h2>Productos</h2>
+        <h2 id="tituloCategoria">Productos</h2>
         <div id="producto-container" class="row row-cols-1 row-cols-md-3 g-4">
             <!-- Las tarjetas se insertarán aquí -->
         </div>
@@ -112,5 +110,7 @@
     
   
     <script src="scrip.js"></script>
+    <script src="categories.js"></script>
+    <script src="buscar.js"></script>
 </body>
 </html>
