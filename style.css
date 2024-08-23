@@ -32,6 +32,7 @@ h2 {
     margin-top: 20px;
 }
 
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -44,7 +45,7 @@ h2 {
 }
 
 .btn {
-    background-color: #007BFF;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -53,20 +54,59 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #b38f00;
+    font-weight: 600;
 }
 
 #contactForm {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+    display: flex;
+    
+    justify-content: center;
+    gap: 5px;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #252527;
     border-radius: 10px;
     background-color: #f9f9f9;
-    transition: background-color 0.3s;
+    transition: -webkit-box-shadow 1s;
+   
+    
+}
+
+#contactForm:hover {
+    
+    border: 4px solid #000001;
+    -webkit-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 24px 0px rgba(0,0,0,0.75);
+    
+
+}
+
+#contacForm h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 800;
 }
 
 
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #645307ad;
+    z-index: 1;
+    visibility: hidden;
+
+}
 
 
 
