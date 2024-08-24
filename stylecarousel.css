@@ -1,0 +1,9 @@
+#carouselExampleAutoplaying {
+    border: 2px solid black;
+    border-radius: 5%;
+    min-height: 200px; /* o el alto que prefieras */
+}
+
+img{
+    border-radius: 5%;
+}
