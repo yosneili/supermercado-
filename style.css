@@ -96,6 +96,7 @@ body {
 
   .card {
     height: 100%;
+    background-color: #F5F5DC;
 }
 
 .btn {
@@ -168,7 +169,7 @@ body {
 }
 
 .card-footer {
-    background-color: transparent;
+    background-color: #F5F5DC;
     border-top: none;
     padding: 0.75rem 1.25rem;
 }
