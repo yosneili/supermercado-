@@ -8,7 +8,6 @@ $(document).ready(function () {
         }
     );
 
-    
 
 
     $( "#contactForm" ).on( "submit", function( event ) {
